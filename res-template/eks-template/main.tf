@@ -7,8 +7,8 @@ resource "rafay_eks_cluster" "eks-cluster-1" {
     }
     spec {
       type           = "eks"
-      blueprint      = "default"
-      blueprint_version = "1.13.0"
+      blueprint      = var.blueprint
+      blueprint_version = var.blueprint_version
       cloud_provider = "dileep-aws"
       cni_provider   = "aws-cni"
       proxy_config   = {}

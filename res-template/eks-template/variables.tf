@@ -14,3 +14,11 @@ variable region {
   default     = "us-west-2"
   description = "AWS region"
 }
+
+variable blueprint{
+  type = string
+}
+
+variable blueprint_version{
+  type = string
+}
