@@ -87,7 +87,7 @@ resource "rafay_eks_cluster" "eks-cluster-1" {
       min_size         = 1
       max_size         = 2
       max_pods_per_node = 50
-      version          = "1.21"
+      version          = "1.31"
       volume_size      = 100
       volume_type      = "gp3"
       private_networking = true
