@@ -1,3 +1,4 @@
+
 resource "rafay_addon" "my-addon-gpu" {
   metadata {
     name    = var.addon_name
