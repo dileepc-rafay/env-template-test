@@ -18,7 +18,7 @@ resource "rafay_eks_cluster" "eks-cluster-1" {
     apiversion = "rafay.io/v1alpha5"
     kind       = "ClusterConfig"
     metadata {
-      name    = "eks-cluster-dileep-may-12"
+      name    = var.cluster_name
       region  = var.region
       version = "1.21"
     }
