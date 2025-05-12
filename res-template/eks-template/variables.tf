@@ -20,5 +20,5 @@ variable blueprint{
 }
 
 variable blueprint_version{
-  type = string
+  type = string 
 }
