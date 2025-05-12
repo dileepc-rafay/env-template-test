@@ -1,3 +1,23 @@
+resource "rafay_namespace"  "my-new-namespace2" {
+  
+  metadata {
+    name = var.namespace
+    project = var.project
+  }
+  spec {
+    drift {
+      enabled = false
+    }
+    placement {
+      labels {
+        key   = "rafay.dev/clusterName"
+        value = var.cluster_name
+      }
+    }
+  }
+}
+
+
 resource "rafay_eks_cluster" "eks-cluster-1" {
   cluster {
     kind = "Cluster"
