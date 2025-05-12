@@ -1,7 +1,7 @@
 resource "rafay_namespace"  "my-new-namespace2" {
   
   metadata {
-    name = var.namespace
+    name = "test-rt"
     project = var.project_name
   }
   spec {
