@@ -22,7 +22,7 @@ resource "rafay_eks_cluster" "eks-cluster-1" {
       name    = var.cluster_name
       region  = var.region
       version = "1.31"
-      tags   = {
+      tags    = {
         "env" = "dev"
         "email"  = "dileep.c@rafay.co"
       }
