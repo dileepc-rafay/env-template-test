@@ -2,7 +2,7 @@ resource "rafay_namespace"  "my-new-namespace2" {
   
   metadata {
     name = var.namespace
-    project = var.project
+    project = var.project_name
   }
   spec {
     drift {
