@@ -13,7 +13,7 @@ variable addon_name {
 
 variable namespace {
     type = string
-    default = "test-rt"
+    default = "default"
     description = "namespace name"
 }
 

@@ -1,22 +1,3 @@
-resource "rafay_namespace"  "my-new-namespace2" {
-  
-  metadata {
-    name = "test-rt"
-    project = var.project_name
-  }
-  spec {
-    drift {
-      enabled = false
-    }
-    placement {
-      labels {
-        key   = "rafay.dev/clusterName"
-        value = var.cluster_name
-      }
-    }
-  }
-}
-
 
 resource "rafay_eks_cluster" "eks-cluster-1" {
   cluster {
@@ -41,6 +22,10 @@ resource "rafay_eks_cluster" "eks-cluster-1" {
       name    = var.cluster_name
       region  = var.region
       version = "1.31"
+      tags   = {
+        "env" = "dev"
+        "email"  = "dileep.c@rafay.co"
+      }
     }
     iam {
       with_oidc = true
