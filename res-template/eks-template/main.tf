@@ -20,7 +20,7 @@ resource "rafay_eks_cluster" "eks-cluster-1" {
     metadata {
       name    = var.cluster_name
       region  = var.region
-      version = "1.21"
+      version = "1.31"
     }
     iam {
       with_oidc = true
