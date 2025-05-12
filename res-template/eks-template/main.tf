@@ -1,4 +1,4 @@
-
+# This is a Terraform configuration file for creating an EKS cluster using the Rafay platform.
 resource "rafay_eks_cluster" "eks-cluster-1" {
   cluster {
     kind = "Cluster"
