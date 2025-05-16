@@ -19,7 +19,19 @@ spec:
         revision: main
       systemToGitSync: true
     name: my-new-pipeline
+    next:
+    - name: stage-2
     type: SystemSync
+  - config:
+      namespace: test
+      placement:
+        labels:
+        - key: rafay.dev/clusterName
+          value: dileep-import
+      projectName: testing-dileep
+      workloadTemplate: my-new-template-16-1
+    name: stage-2
+    type: DeployWorkloadTemplate
   triggers:
   - config:
       repo:
