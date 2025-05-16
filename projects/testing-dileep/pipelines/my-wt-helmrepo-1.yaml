@@ -20,7 +20,7 @@ spec:
   - config:
       repo:
         paths:
-        - name: charts/app/values.yaml
+        - name: charts/app
         provider: Github
         repository: my-own-helm-git
         revision: main
