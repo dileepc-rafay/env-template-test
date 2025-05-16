@@ -16,13 +16,3 @@ spec:
       workloadTemplate: my-wt-helmrepo
     name: default-stage1
     type: DeployWorkloadTemplate
-  triggers:
-  - config:
-      repo:
-        paths:
-        - name: charts/app
-        provider: Github
-        repository: my-own-helm-git
-        revision: main
-    name: my-trigger1
-    type: Webhook
