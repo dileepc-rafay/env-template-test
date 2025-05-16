@@ -18,4 +18,4 @@ spec:
     labels:
     - key: rafay.dev/clusterName
       value: dileep-import
-  version: d-my-new-helmrepo-80468be2-v1-202505161004000000
+  version: d-my-new-helmrepo-80468be2-v2-202505161004590000
