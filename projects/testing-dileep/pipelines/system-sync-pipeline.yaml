@@ -29,7 +29,7 @@ spec:
         - key: rafay.dev/clusterName
           value: dileep-import
       projectName: testing-dileep
-      workloadTemplate: my-new-template-16-1
+      workloadTemplate: my-wt-helmrepo
     name: stage-2
     type: DeployWorkloadTemplate
   triggers:
