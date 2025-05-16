@@ -7,7 +7,7 @@ spec:
   artifact:
     artifact:
       chartName: app
-      chartVersion: 0.1.22
+      chartVersion: 0.1.23
       repository: my-latest-git-helm
     options:
       maxHistory: 10
@@ -18,4 +18,4 @@ spec:
     labels:
     - key: rafay.dev/clusterName
       value: dileep-import
-  version: d-my-new-helmrepo-de2b0cb0-v4-202505221014350000
+  version: d-my-new-helmrepo-de2b0cb0-v5-202205221014350000
