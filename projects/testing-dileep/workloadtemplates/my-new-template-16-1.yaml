@@ -1,0 +1,18 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: WorkloadTemplate
+metadata:
+  name: my-new-template-16-1
+  project: testing-dileep
+spec:
+  artifact:
+    artifact:
+      chartPath:
+        name: charts/app
+      repository: my-new-repo-16
+      revision: main
+      valuesPaths:
+      - name: values/
+    options:
+      maxHistory: 10
+      timeout: 5m0s
+    type: Helm
