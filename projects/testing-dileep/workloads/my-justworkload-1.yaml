@@ -9,5 +9,10 @@ spec:
       catalog: default-helm
       chartName: simple-nginx
       chartVersion: 1.1.1
+    options:
+      maxHistory: 10
+      timeout: 5m0s
     type: Helm
   namespace: test
+  placement:
+    selector: rafay.dev/clusterName=dileep-import
