@@ -1,0 +1,6 @@
+dependencies:
+- name: mysql
+  repository: https://regression-charts.run.dev.rafay-edge.net/charts
+  version: 9.12.1
+digest: sha256:8425665ddfbad532e41fdb9cf4c3e30d8281fe8eaecdead2a1cde365ed9fe53c
+generated: "2025-05-15T11:37:46.601335+05:30"
