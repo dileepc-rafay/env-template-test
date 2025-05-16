@@ -1,0 +1,21 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: my-wt-helmrepo-49b702ad
+  project: testing-dileep
+spec:
+  artifact:
+    artifact:
+      chartName: app
+      chartVersion: 0.1.11
+      repository: my-latest-git-helm
+    options:
+      maxHistory: 10
+      timeout: 5m0s
+    type: Helm
+  namespace: test-ns
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: dileep-import
+  version: my-wt-helmrepo-49b702ad-v1-202505160612090000
