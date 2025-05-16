@@ -29,6 +29,7 @@ spec:
         - key: rafay.dev/clusterName
           value: dileep-import
       projectName: testing-dileep
+      useRevisionFromWebhookTriggerEvent: true
       workloadTemplate: my-wt-helmrepo
     name: stage-2
     type: DeployWorkloadTemplate
