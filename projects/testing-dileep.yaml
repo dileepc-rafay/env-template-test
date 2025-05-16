@@ -1,7 +1,0 @@
-apiVersion: system.k8smgmt.io/v3
-kind: Project
-metadata:
-  name: testing-dileep
-spec:
-  driftWebhook:
-    enabled: true
