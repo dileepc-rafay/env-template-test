@@ -7,7 +7,7 @@ spec:
   artifact:
     artifact:
       chartName: app
-      chartVersion: 0.1.20
+      chartVersion: 0.1.21
       repository: my-latest-git-helm
     options:
       maxHistory: 10
