@@ -1,0 +1,32 @@
+apiVersion: gitops.k8smgmt.io/v3
+kind: Pipeline
+metadata:
+  name: system-sync-pipeline
+  project: testing-dileep
+spec:
+  active: true
+  stages:
+  - config:
+      destinationRepo: {}
+      gitToSystemSync: true
+      includedResources:
+      - name: Workload
+      - name: WorkloadTemplate
+      - name: Pipeline
+      sourceAsDestination: true
+      sourceRepo:
+        repository: my-new-repo-16
+        revision: main
+      systemToGitSync: true
+    name: my-new-pipeline
+    type: SystemSync
+  triggers:
+  - config:
+      repo:
+        paths:
+        - name: projects
+        provider: Github
+        repository: my-new-repo-16
+        revision: main
+    name: my-trigger
+    type: Webhook

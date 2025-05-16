@@ -1,0 +1,29 @@
+apiVersion: gitops.k8smgmt.io/v3
+kind: Pipeline
+metadata:
+  name: my-new-pipeline
+  project: testing-dileep
+spec:
+  active: true
+  stages:
+  - config:
+      namespace: test
+      placement:
+        labels:
+        - key: rafay.dev/clusterName
+          value: dileep-import
+      projectName: testing-dileep
+      workloadTemplate: my-new-template-16-1
+    name: new-temp
+    type: DeployWorkloadTemplate
+  triggers:
+  - config:
+      repo:
+        paths:
+        - name: values/
+        - name: charts/app
+        provider: Github
+        repository: my-new-repo-16
+        revision: main
+    name: my-new-trigger
+    type: Webhook

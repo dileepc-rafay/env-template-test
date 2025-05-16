@@ -1,0 +1,18 @@
+apiVersion: gitops.k8smgmt.io/v3
+kind: Pipeline
+metadata:
+  name: my-wt-helmrepo-1
+  project: testing-dileep
+spec:
+  active: true
+  stages:
+  - config:
+      namespace: test-ns
+      placement:
+        labels:
+        - key: rafay.dev/clusterName
+          value: dileep-import
+      projectName: testing-dileep
+      workloadTemplate: my-wt-helmrepo
+    name: default-stage1
+    type: DeployWorkloadTemplate
