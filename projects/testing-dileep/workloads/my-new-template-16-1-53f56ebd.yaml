@@ -21,4 +21,4 @@ spec:
     labels:
     - key: rafay.dev/clusterName
       value: dileep-import
-  version: my-new-template-16-1-53f56ebd-v8-202505160919430000
+  version: my-new-template-16-1-53f56ebd-v9-202505160920470000
