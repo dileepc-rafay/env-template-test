@@ -1,0 +1,24 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: my-new-template-16-1-53f56ebd
+  project: testing-dileep
+spec:
+  artifact:
+    artifact:
+      chartPath:
+        name: charts/app
+      repository: my-new-repo-16
+      revision: main
+      valuesPaths:
+      - name: values/
+    options:
+      maxHistory: 10
+      timeout: 5m0s
+    type: Helm
+  namespace: test
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: dileep-import
+  version: my-new-template-16-1-53f56ebd-v1-202505160907080000
