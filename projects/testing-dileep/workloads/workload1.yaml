@@ -1,0 +1,17 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: workload1
+  project: testing-dileep
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: helm/nginx.yaml
+      repository: dileep-repo
+      revision: main
+    type: Yaml
+  namespace: test-ns
+  placement:
+    selector: rafay.dev/clusterName=dileep-import
+  version: workload1-v3-202505141211060000
