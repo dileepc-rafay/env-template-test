@@ -9,7 +9,7 @@ spec:
       chartPath:
         name: charts/app
       repository: my-new-repo-16
-      revision: master
+      revision: main
       valuesPaths:
       - name: values/
     options:
