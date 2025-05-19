@@ -1,0 +1,21 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Addon
+metadata:
+  annotations:
+    rafay.dev/audit_type: BROWSER||Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)
+      AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+    rafay.dev/audit_user: dileep.c@rafay.co
+    rafay.dev/audit_user_group: Organization Admins
+  name: latest-addon-helm-git
+  project: testing-dileep
+spec:
+  artifact:
+    artifact:
+      chartName: app
+      chartVersion: 0.1.11
+      repository: my-latest-git-helm
+    type: Helm
+  namespace: test
+  sharing: {}
+  version: "5"
+  versionState: active
